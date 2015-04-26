@@ -1,0 +1,12 @@
+#corpse-container{
+	margin-left:auto;
+	margin-right:auto;
+	width:800px;
+	height:480px;
+	background-color:#111;
+}
+#fps{
+	position:absolute;
+	padding:10px;
+	font-size:22px;
+}

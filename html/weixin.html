@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>weixin.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript">
+	
+function dump(obj){
+	var str = "";
+	for(var key in obj){
+		str += "key:"+key+";value="+obj[key]+"\n";
+	}
+	return str;
+}
+		window.onload = function init(){
+			document.getElementById("test").onclick = function(){
+				this.style.fontSize = "45px";
+			};
+		};
+	
+	</script>
+  </head>
+  
+  <body>
+  <div id ="test" style= "font-size:25px;background:#af3;padding:10px;">3434</div>
+    This is my HTML page. <br>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="../js/quark.base-1.0.0.js"></script>
+    <script type="text/javascript" src="../js/test.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  <script type="text/javascript">
+  Array.prototype.deleteBy = function(indexOrValue){
+		if(typeof indexOrObj == "number"){
+			this.splice(indexOrVaule, 1);
+			return true;
+		}else{
+			for(var i = 0;i<this.length;i++){
+				if(this[i] == indexOrValue){
+					this.splice(i, 1);
+					return true;
+				}
+			}
+			return false;
+		}
+	};
+	var obj ={};
+	
+	
+	
+	
+ 	var t = [];
+ 	t.push(4);
+ 	t.push(5);
+ 	t.push(obj);
+ 	
+ 	for(var i = 0;i<t.length;i++){
+ 		var v = t[i];
+ 		if(v == 4){
+ 			t.push(2);
+ 		}
+ 		if(v == obj){
+ 			t.deleteBy(t[i]);
+ 			i--;
+ 		}
+ 		dump(t);
+ 	
+	}
+ 	
+ 	//dump(t);
+ 	//t.deleteBy(obj);
+ 	//dump(t);
+ 	
+ 	trace(typeof "");
+  </script>
+  <body>
+	<div id="container" >
+		<div id="fps">FPS:0</div>
+	</div>
+	<img id="player_walk" alt="" src="../images/player_walk2.png" style="display:none;">
+  </body>
+</html>
