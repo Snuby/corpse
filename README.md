@@ -1,4 +1,5 @@
 # corpse
+试玩地址：http://jamie.pplnk.com/jzone/view/corpse
 h5小游戏，《步步僵尸》
 
 下载后，打开index.html即可运行游戏
